@@ -4,12 +4,7 @@
 
 This project was created as part of the Namoza Analytics assignment.
 
-The objective was to:
-
-- Create a mobile-friendly consultation landing page using HTML, CSS, and JavaScript.
-- Implement a custom dataLayer event for GTM tracking.
-- Design a GTM event tracking schema.
-- Propose an integration architecture using GTM, GA4, HubSpot CRM, Google Ads, and Karix WhatsApp API.
+The solution is built using **HTML5, CSS3, and Vanilla JavaScript** in a **single self-contained HTML file**, as required. It demonstrates a consultation landing page with lead capture, client-side event tracking, and supporting documentation for analytics implementation.
 
 ---
 
@@ -19,8 +14,6 @@ The objective was to:
 Namoza-Assignment/
 │
 ├── index.html
-├── style.css
-├── script.js
 ├── task1-schema.md
 ├── task3-integration.md
 ├── pagespeed-score.png
@@ -29,20 +22,33 @@ Namoza-Assignment/
 
 ---
 
+## Technologies Used
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Tag Manager (Concept)
+- Google Analytics 4 (Concept)
+- HubSpot CRM (Integration Design)
+- Google Ads Conversion Tracking (Concept)
+
+---
+
 ## Task 1 - GTM Event Tracking Schema
 
-Documented the event tracking plan including:
+This document contains the proposed event tracking plan, including:
 
 - Consultation form submission
-- Appointment booking funnel tracking
-- Call and WhatsApp interactions
-- Guide downloads
+- Appointment booking funnel
+- Call button tracking
+- WhatsApp click tracking
+- Patient guide downloads
 - Blog engagement events
-- Google Ads conversion recommendation
+- Recommended Google Ads conversion event
 
-File:
+**File:**
 
-```text
+```
 task1-schema.md
 ```
 
@@ -53,12 +59,13 @@ task1-schema.md
 ### Features
 
 - Responsive design
-- Consultation lead form
-- Name and Phone Number collection
+- Hero section
+- Consultation form
 - Trust indicators
 - Patient testimonials
-- Thank-you state after submission
-- Custom dataLayer event tracking
+- Thank You message after form submission
+- Custom `dataLayer.push()` implementation
+- Mobile-optimized layout
 
 ### Custom Event
 
@@ -68,7 +75,7 @@ window.dataLayer.push({
 });
 ```
 
-### Lighthouse Score
+### Lighthouse Performance
 
 Mobile Lighthouse Results:
 
@@ -77,9 +84,9 @@ Mobile Lighthouse Results:
 - Best Practices: 100
 - SEO: 90
 
-Screenshot included in:
+Screenshot included:
 
-```text
+```
 pagespeed-score.png
 ```
 
@@ -87,7 +94,7 @@ pagespeed-score.png
 
 ## Task 3 - Integration Design
 
-The proposed architecture includes:
+The proposed architecture explains integration with:
 
 - Google Tag Manager (GTM)
 - Google Analytics 4 (GA4)
@@ -95,36 +102,36 @@ The proposed architecture includes:
 - Google Ads Conversion Tracking
 - Karix WhatsApp API
 
-The document explains:
+The document includes:
 
 - User journey
 - Data flow
 - Lead capture process
-- HubSpot contact creation
+- HubSpot integration approach
 - Conversion tracking
-- Failure handling and monitoring
+- Error handling and monitoring
 
-File:
+**File:**
 
-```text
+```
 task3-integration.md
 ```
 
 ---
 
-## How to Run
+## Running the Project
 
-Open the project folder and start a local server.
+Since the project is a static HTML page, simply open **index.html** in any modern web browser.
 
-Example:
+Alternatively, you can run a local server:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit:
+Then open:
 
-```text
+```
 http://localhost:8000
 ```
 
@@ -132,4 +139,4 @@ http://localhost:8000
 
 ## Author
 
-Mohd Bilal
+**Mohd Bilal**
