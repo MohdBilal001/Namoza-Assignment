@@ -1,5 +1,15 @@
 # OrthoNow Consultation Landing Page Assignment
 
+
+
+## 🚀 Live Project
+
+🌐 **Live Demo (Netlify)**  
+https://eclectic-rugelach-b0a962.netlify.app/
+
+💻 **GitHub Repository**  
+https://github.com/MohdBilal001/Namoza-Assignment
+
 ## Project Overview
 
 This project was created as part of the Namoza Analytics assignment.
