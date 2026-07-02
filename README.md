@@ -1,14 +1,14 @@
 # OrthoNow Consultation Landing Page Assignment
 
+**Loom Walkthrough Video:** [https://www.loom.com/share/30b1ea12373d4fbf91d5a1d0fc97afad](https://www.loom.com/share/10dfda5ffb40471f890fe4bfd359e0c3)
 
+*(Please watch this video for a detailed technical walkthrough of the implementation.)*
 
-## 🚀 Live Project
+## Live Demo
 
-🌐 **Live Demo (Netlify)**  
-https://eclectic-rugelach-b0a962.netlify.app/
+**Project Deployed on Netlify:** [https://eclectic-rugelach-b0a962.netlify.app/]
 
-💻 **GitHub Repository**  
-https://github.com/MohdBilal001/Namoza-Assignment
+*The landing page is fully deployed and optimized for high-performance delivery via Netlify’s global CDN.*
 
 ## Project Overview
 
