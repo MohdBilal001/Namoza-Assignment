@@ -1,174 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OrthoNow - Expert Orthopaedic Consultation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OrthoNow - Expert Orthopaedic Consultation</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#0d6efd,#0dcaf0);
+    color:white;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    margin-bottom:20px;
+}
+
+.badges{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.badge{
+    background:rgba(255,255,255,0.15);
+    padding:10px 15px;
+    border-radius:30px;
+}
+
+.form-card{
+    background:white;
+    color:#333;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.form-card h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-card input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.form-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#0d6efd;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.form-card button:hover{
+    background:#0056d2;
+}
+
+#thankYou{
+    display:none;
+    text-align:center;
+}
+
+.stats{
+    padding:70px 20px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.stat-card h3{
+    color:#0d6efd;
+    font-size:2rem;
+}
+
+.reviews{
+    padding:70px 20px;
+    background:white;
+}
+
+.reviews h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.review{
+    background:#f7f9fc;
+    padding:25px;
+    border-radius:15px;
+}
+
+.stars{
+    color:#ffb400;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.cta-section{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta-section h2{
+    margin-bottom:20px;
+}
+
+.cta-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#0d6efd;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content{
+    grid-template-columns:1fr;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:2.2rem;
+}
+
+}
+</style>
+
 </head>
 <body>
 
 <section class="hero">
 
-    <div class="container">
+<div class="container">
 
-        <div class="hero-content">
+<div class="hero-content">
 
-            <div class="hero-text">
+<div class="hero-text">
 
-                <h1>Knee or Back Pain Slowing You Down?</h1>
+<h1>Knee or Back Pain Slowing You Down?</h1>
 
-                <p>
-                    Get an expert orthopaedic consultation from experienced specialists at OrthoNow.
-                    Receive a personalized treatment plan and start your recovery journey today.
-                </p>
+<p>
+Get an expert orthopaedic consultation from experienced specialists at OrthoNow.
+Receive a personalized treatment plan and start your recovery journey today.
+</p>
 
-                <div class="badges">
-                    <div class="badge">🏥 9 Clinics</div>
-                    <div class="badge">⭐ 50,000+ Patients</div>
-                    <div class="badge">👨‍⚕️ Expert Doctors</div>
-                    <div class="badge">📅 Same-Day Appointments</div>
-                </div>
+<div class="badges">
+<div class="badge">🏥 9 Clinics</div>
+<div class="badge">⭐ 50,000+ Patients</div>
+<div class="badge">👨‍⚕️ Expert Doctors</div>
+<div class="badge">📅 Same-Day Appointments</div>
+</div>
 
-            </div>
+</div>
 
-            <div class="form-card">
+<div class="form-card">
 
-                <div id="formSection">
+<div id="formSection">
 
-                    <h2>Book Your Consultation</h2>
+<h2>Book Your Consultation</h2>
 
-                    <form id="consultationForm">
+<form id="consultationForm">
 
-                        <input
-                                type="text"
-                                id="name"
-                                placeholder="👤 Your Name"
-                                required>
+<input
+type="text"
+id="name"
+placeholder="👤 Your Name"
+required>
 
-                        <input
-                                type="tel"
-                                id="phone"
-                                placeholder="📞 Phone Number"
-                                required>
+<input
+type="tel"
+id="phone"
+placeholder="📞 Phone Number"
+required>
 
-                        <button type="submit">
-                            Get Expert Opinion
-                        </button>
+<button type="submit">
+Get Expert Opinion
+</button>
 
-                    </form>
+</form>
 
-                </div>
+</div>
 
-                <div id="thankYou">
+<div id="thankYou">
 
-                    <h2>🎉 Thank You!</h2>
+<h2>🎉 Thank You!</h2>
 
-                    <p>
-                        Your consultation request has been received.
-                        Our team will contact you shortly.
-                    </p>
+<p>
+Your consultation request has been received.
+Our team will contact you shortly.
+</p>
 
-                </div>
+</div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="stats">
 
-    <div class="container">
+<div class="container">
 
-        <div class="stats-grid">
+<div class="stats-grid">
 
-            <div class="stat-card">
-                <h3>9+</h3>
-                <p>Clinics Across South India</p>
-            </div>
+<div class="stat-card">
+<h3>9+</h3>
+<p>Clinics Across South India</p>
+</div>
 
-            <div class="stat-card">
-                <h3>50,000+</h3>
-                <p>Patients Treated</p>
-            </div>
+<div class="stat-card">
+<h3>50,000+</h3>
+<p>Patients Treated</p>
+</div>
 
-            <div class="stat-card">
-                <h3>20+</h3>
-                <p>Orthopaedic Specialists</p>
-            </div>
+<div class="stat-card">
+<h3>20+</h3>
+<p>Orthopaedic Specialists</p>
+</div>
 
-            <div class="stat-card">
-                <h3>4.8/5</h3>
-                <p>Average Patient Rating</p>
-            </div>
+<div class="stat-card">
+<h3>4.8/5</h3>
+<p>Average Patient Rating</p>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="reviews">
 
-    <div class="container">
+<div class="container">
 
-        <h2>What Patients Say</h2>
+<h2>What Patients Say</h2>
 
-        <div class="review-grid">
+<div class="review-grid">
 
-            <div class="review">
-                <div class="stars">★★★★★</div>
-                <p>
-                    The doctors explained my knee problem clearly and helped me recover without surgery.
-                </p>
-                <strong>- Rajesh K., Bengaluru</strong>
-            </div>
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+The doctors explained my knee problem clearly and helped me recover without surgery.
+</p>
+<strong>- Rajesh K., Bengaluru</strong>
+</div>
 
-            <div class="review">
-                <div class="stars">★★★★★</div>
-                <p>
-                    Very professional team. Quick appointment and excellent treatment.
-                </p>
-                <strong>- Priya S., Hyderabad</strong>
-            </div>
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+Very professional team. Quick appointment and excellent treatment.
+</p>
+<strong>- Priya S., Hyderabad</strong>
+</div>
 
-            <div class="review">
-                <div class="stars">★★★★★</div>
-                <p>
-                    I had severe back pain. The consultation gave me the right treatment path.
-                </p>
-                <strong>- Arun M., Chennai</strong>
-            </div>
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>
+I had severe back pain. The consultation gave me the right treatment path.
+</p>
+<strong>- Arun M., Chennai</strong>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</div>
 
 </section>
 
 <section class="cta-section">
 
-    <h2>Still Living With Pain?</h2>
+<h2>Still Living With Pain?</h2>
 
-    <p>
-        Book your consultation today and get expert guidance.
-    </p>
+<p>
+Book your consultation today and get expert guidance.
+</p>
 
-    <a href="#formSection" class="cta-btn">
-        Book Consultation Now
-    </a>
+<a href="#formSection" class="cta-btn">
+Book Consultation Now
+</a>
 
 </section>
 
 <footer>
-    <p>© 2026 OrthoNow Healthcare. All Rights Reserved.</p>
+<p>© 2026 OrthoNow Healthcare. All Rights Reserved.</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+document
+.getElementById("consultationForm")
+.addEventListener("submit", function (e) {
+
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+
+window.dataLayer.push({
+event: "consultation_form_submitted",
+user_name: name,
+phone_number: phone,
+page_type: "consultation_landing_page",
+source: "google_ads",
+timestamp: new Date().toISOString()
+});
+
+console.log("DataLayer Event Fired:");
+console.log(window.dataLayer);
+
+document.getElementById("formSection").style.display = "none";
+document.getElementById("thankYou").style.display = "block";
+
+});
+</script>
 
 </body>
 </html>
