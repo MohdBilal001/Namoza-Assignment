@@ -1,6 +1,6 @@
 # OrthoNow Consultation Landing Page Assignment
 
-**Loom Walkthrough Video:** [https://www.loom.com/share/30b1ea12373d4fbf91d5a1d0fc97afad](https://www.loom.com/share/10dfda5ffb40471f890fe4bfd359e0c3)
+**Loom Walkthrough Video:** [https://www.loom.com/share/30b1ea12373d4fbf91d5a1d0fc97afad]
 
 *(Please watch this video for a detailed technical walkthrough of the implementation.)*
 
